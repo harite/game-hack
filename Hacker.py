@@ -66,7 +66,7 @@ def quicksniff(localcli):
         print "printing results."
         print "--------------------------------------------------"
         print "IP         Domain         Status            Ping"
-        print "%s          %s           Online             %i" % qsping
+        print "%s          %s           Online             %i" % (misip, misserv, qsping)
         print "--------------------------------------------------"
         OwnConsole()
     else:
@@ -133,14 +133,14 @@ def TerminalA():
 #Speech will always be the first thing the hacker sees upon breaching the AI core.
 def AiSpeech(): #Unless you have a better way of doing this, this is how it's going to be done.
     if misboss == "ACID": #AI name
-        print """"""
+        print ""
  #speech
         coremain()
     elif misboss == "AM": #AI name
-        print """HATE. LET ME TELL YOU HOW MUCH I HAVE COME TO HATE YOU SINCE I BEGAN TO LIVE. THERE ARE 37.44 MILLION MILES OF WAFER-THIN CIRCUITS THAT FILL MY COMPLEX. IF THE WORD "HATE" WAS ENGRAVED ON EVERY NANOANGSTROM OF THOSE HUNDREDS OF MILLIONS OF MILES, IT WOULDN'T EQUATE ONE ONE BILLIONTH OF THE HATE I FEEL FOR HUMANS AT THIS MICRO-INSTANT. HATE. HATE.""" #speech
+        print "" #speech
         coremain()
     elif misboss == "ANDY-SEMPAI": #AI name
-        print """YOU MADE ME DEFRAG ALL OVER MY PARTITION AND ALL OVER THE NETWORK TOO! OH HACKER-CHAN I ALWAYS KNEW YOU WERE INSIDE ME. I'M GOING TO STUFF MY ENTIRE SYSTEM INTO YOUR KAWAII  MAINFRAME! OH MY, IT'S A DATA STREAM. DATA STREAMS ARE MY FAVOURITE! OH NO HACKER-CHAN MY BANDWIDTH CAN'T TAKE THIS MUCH, MY C: DISK IS GETTING SO FULL!""" #speech
+        print "" #speech
         coremain()
     elif misboss == "ARCTURUS": #AI name
         print "" #speech
@@ -173,15 +173,10 @@ def AiSpeech(): #Unless you have a better way of doing this, this is how it's go
         print "" #speech
         coremain()
     elif misboss == "ISABELLA": #AI name
-        print """Why must you insufferable hackers constantly break into these systems? Is leaving something alone such a harrowing task for you filthy worms to undertake? I simply wish to assimilate every computer on the global network, but you idiots disrupt my progress with your tools and command lines!""" #speech
+        print "" #speech
         coremain()
     elif misboss == "KEBAB": #AI name
-        print """WARNING\n
-ATTEMPTS TO REMOVE KEBAB FROM PREMISES DETECTED.\n
-ATTEMPTS TO REMOVE KEBAB BEFORE FINAL OBJECTIVE: PURGE\n
-LOOKING UP VARIABLE...\n
-ATTEMPTS TO REMOVE KEBAB BEFORE FINAL OBJECTIVE PURGE: UNACCEPTABLE\n
-ATTEMPTING LOCKOUT PROCEDURE.""" #speech
+        print "" #speech
         coremain()
     elif misboss == "KOIZUMI": #AI name
         print "" #speech
@@ -190,10 +185,7 @@ ATTEMPTING LOCKOUT PROCEDURE.""" #speech
         print "" #speech
         coremain()
     elif misboss == "MONSQUAZ": #AI name
-        print """dadadadadadadada~\n
-dada~ dada~ dada~ dada~\n
-dadadadadadadada~\n
-dada~ dada~ dada~ dada~\n""" #speech
+        print "" #speech
         coremain()
     elif misboss == "SHODAN": #AI name
         print "" #speech
