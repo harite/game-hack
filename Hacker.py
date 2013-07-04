@@ -64,10 +64,10 @@ def quicksniff(localcli):
         print "Pinging terminals."
         print "All but (1) offline."
         print "printing results."
-        print "--------------------------------------------------"
-        print "IP         Domain         Status            Ping"
-        print "%s   %s    Online      %i" % (misip, misserv, qsping)
-        print "--------------------------------------------------"
+        print "--------------------------------------------------------------------------------"
+        print "IP                 Domain                  Status            Ping"
+        print "%s   %s                     Online                %ims" % (misip, misserv, qsping)
+        print "--------------------------------------------------------------------------------"
         OwnConsole()
     else:
         print "ping: Unknown Host."
@@ -116,12 +116,13 @@ def ServerLoginScreen():
     else:
         print "Password invalid."
         print "Warning. Potential threat detected. Connection terminated."
-        OwnConsole()    
-    
+        OwnConsole()
+#Between Host Terminals and Sysop Terminal
+#Between Sysop Terminal and AI
 #REMOTE HOST 1 (Terminal 1)
 
 def TerminalA():
-   raw_input 
+   raw_input
 #REMOTE HOST 2 (Terminal 2)
 
 #REMOTE HOST 3 (Terminal 3)
@@ -134,7 +135,7 @@ def TerminalA():
 
 #REMOTE HOST 7 (AI CORE)
 #Speech will always be the first thing the hacker sees upon breaching the AI core.
-def AiSpeech(): #Unless you have a better way of doing this, this is how it's going to be done.
+def AiSpeech(): #PLEASE PLEASE FUCKING WRITE THIS TO A FILE. IT HURTS MY SOUL TO LOOK AT IT.
     if misboss == "ACID": #AI name
         print ""
  #speech
@@ -212,13 +213,8 @@ def AiSpeech(): #Unless you have a better way of doing this, this is how it's go
         print "You shouldn't be seeing this, you whore."
         coremain()
 
-def coremain():
+def coremain(): #This'll involve backtracing, probably to the local terminal in artsy-fartsy style..
     print "Welcome to the rice fields motherfucker."
-
-#Default error handler - Fall back within the function if possible.
-def invalid_command():
-    print "You shouldn't be seeing this."
-    OwnConsole()
 
 #Everything below here is seen by the player.
 print "  #   #     #        #####  #   #  #####  ###  "
@@ -242,11 +238,11 @@ The email reads...
 To: %s%i@yahoo.co.uk 
 From: %s@smartsecurity.org
 --------------------------------------------------
-Hey %s, some assbag hacked into my server last night and I was wondering if you could get him back for me. Nothing seems to be damaged or modified, but I'm worried about him getting in again and causing some real damage.
+Hey %s, some ass hacked into my server last night and I was wondering if you could get him back for me. Nothing seems to be damaged or modified, but I'm worried about him getting in again and causing some real damage.
 
 One thing he forgot to do was delete my log file, so I have his IP.
 
-His IP is %s, so you might want to try pinging the ip, to see if he has anything you can SSH into.
+His IP is %s, so you might want to try one of your crazy hack tools on his ip, to see if he has anything you can ssh into.
 
 I hope you can do something. I'm asking you because I know you won't tell anyone. If any of my colleagues hear of this, it could spell the end for my business.
 
