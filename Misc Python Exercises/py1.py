@@ -1,7 +1,7 @@
 from sys import argv #Imports the modules to allow the file to take arguments
 
 script, filename = argv #defines the argument as a string
-prompt = "dicks:" #sets the prompt
+prompt = "test:" #sets the prompt
 
 txt = open(filename) #Opens the file specified in the argument via line 3
 print "Here's your file %r:" % filename #Statement, %r to substitute instead of hardcoded.
