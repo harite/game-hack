@@ -66,7 +66,7 @@ def quicksniff(localcli):
         print "printing results."
         print "--------------------------------------------------"
         print "IP         Domain         Status            Ping"
-        print "%s          %s           Online             %i" % (misip, misserv, qsping)
+        print "%s   %s    Online      %i" % (misip, misserv, qsping)
         print "--------------------------------------------------"
         OwnConsole()
     else:
@@ -75,13 +75,16 @@ def quicksniff(localcli):
 
 #And the SSH client. This isn't merged into the console, one, because the raw_input prompt changes and two, I don't want to nest any 'if' commands more than 2 deep, or else it becomes a mess.
 def SSH():
+    print "sshclient v1.53.6 active. To use, simply input the domain."
     SSHInput = raw_input("SSH>")
-    if SSHInput == "connect %s" % misserv:
+    if SSHInput == "%s" % misserv:
         print "Connecting..."
         ServerLoginScreen()
     elif SSHInput == "connect":
-        print "Error: No IP specified."
+        print "Error: No domain specified."
         SSH()
+    elif SSHinput == "help":
+        print "To connect to a domain, simply type it."
     elif "back" in SSHInput:
         OwnConsole()
     else:
